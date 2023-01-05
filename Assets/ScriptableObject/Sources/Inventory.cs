@@ -4,7 +4,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] List<Item> StartItems = new List<Item>();
-    List<Item> allItems = new List<Item>();
+    public List<Item> allItems = new List<Item>();
     void Start()
     {
         for (var i = 0; i < StartItems.Count; i++)
